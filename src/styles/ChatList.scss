@@ -1,0 +1,86 @@
+.chatList {
+    flex: 1;
+    overflow: hidden;
+
+    &:hover {
+        overflow: auto;
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        .searchBar {
+            flex: 1;
+            background-color: rgba(rgb(61, 201, 166), .5);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            padding: 5px;
+
+            input {
+                flex: 1;
+                background-color: transparent;
+                border: none;
+                color: snow;
+                font-size: 18px;
+                outline: none;
+
+                &::-webkit-search-cancel-button {
+                    cursor: pointer;
+                }
+            }
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            transition: .3s;
+            .plus {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                background-color: rgba(rgb(61, 201, 166), .5);
+                border-radius: 10px;
+                transition: .3s;
+            }
+        }
+    }
+    .item {
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        border-bottom: 1px solid rgba(rgb(61, 201, 166), .3);
+        transition: .3s;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+        &:hover {
+            background-color: rgba(rgb(61, 201, 166), .3);
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.addUser {
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(rgb(25, 26, 25), .3);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+
+    form {
+        display: flex;
+        gap: 15px;
+
+        input {
+            border: none;
+            padding: 10px;
+            background-color: rgba(rgb(61, 201, 166), .3);
+            outline: none;
+            color: white;
+            font-size: 15px;
+        }
+        button {
+            border: none;
+            padding: 10px;
+            background-color: rgba(rgb(61, 201, 166), .8);
+            color: white;
+            cursor: pointer;
+            transition: .3s;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: rgba(rgb(61, 201, 166), .5);
+            }
+        }
+    }
+
+    .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        .detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        button {
+            padding: 10px;
+            color: white;
+            background-color: rgba(11, 97, 97, 0.747);
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-transform: capitalize;
+            transition: .3s;
+
+            &:hover {
+                background-color: rgba(20, 165, 165, 0.788);
+            }
+        }
+    }
+}
